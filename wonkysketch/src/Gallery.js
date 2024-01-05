@@ -5,14 +5,14 @@ import "./Gallery.css";
 
 const callouts = [
   {
-    name: "Prints",
+    name: "Art",
 
     imageSrc: disco,
     imageAlt: "disco ball",
-    href: "#",
+    href: "/art",
   },
   {
-    name: "Scans",
+    name: "Shop (coming soon!)",
 
     imageSrc: frog,
     imageAlt: "frog",

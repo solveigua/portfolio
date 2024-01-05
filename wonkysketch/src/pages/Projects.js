@@ -42,7 +42,7 @@ const devwork = [
     href: "https://pokemon-ee8l.onrender.com/",
   },
 ];
-function Art() {
+function Projects() {
   const [current, setCurrent] = useState("art");
   document.body.style.overflow = "hidden";
   return (
@@ -92,7 +92,7 @@ function Art() {
         ) : (
           <div className="col-span-2">
             {devwork.map((dev) => (
-              <div>
+              <div className="p-2 m-4 overflow-auto ">
                 <img
                   key={dev.key}
                   src={dev.imageSrc}
@@ -112,4 +112,4 @@ function Art() {
   );
 }
 
-export default Art;
+export default Projects;
