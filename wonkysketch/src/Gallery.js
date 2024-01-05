@@ -1,29 +1,29 @@
-import burnoutWoman from "./images/burnout_woman.jpg";
-import scan2 from "./images/scan2.JPG";
-import scan3 from "./images/scan3.JPG";
+import disco from "./images/disco.JPG";
+import frog from "./images/frog.JPG";
+import scan5 from "./images/scan5.JPG";
 import "./Gallery.css";
 
 const callouts = [
   {
     name: "Prints",
 
-    imageSrc: burnoutWoman,
-    imageAlt: "burnout woman print",
+    imageSrc: disco,
+    imageAlt: "disco ball",
     href: "#",
   },
   {
     name: "Scans",
 
-    imageSrc: scan2,
-    imageAlt: "Scan art",
+    imageSrc: frog,
+    imageAlt: "frog",
     href: "#",
   },
-  {
+  /*  {
     name: "Other",
-    imageSrc: scan3,
+    imageSrc: scan5,
     imageAlt: "Scanart",
     href: "#",
-  },
+  }, */
 ];
 
 export default function Gallery() {
@@ -31,16 +31,16 @@ export default function Gallery() {
     <div>
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-32">
-          <h2 className="text-2xl font-bold text-gray-800">Gallery</h2>
+          <h2 className="text-2xl font-bold text-gray-800">Art Projects</h2>
 
-          <div className="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
+          <div className="mt-6 space-y-12 lg:grid lg:grid-cols-4 lg:gap-x-6 lg:space-y-0">
             {callouts.map((callout) => (
-              <div key={callout.name} className="group relative">
-                <div className="relative h-80 w-full overflow-hidden rounded-md bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64">
+              <div key={callout.name} className="group relative col-span-2">
+                <div className="relative h-10 w-full overflow-hidden rounded-md bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64">
                   <img
                     src={callout.imageSrc}
                     alt={callout.imageAlt}
-                    className="h-full w-full object-cover object-center"
+                    className="h-full w-full object-contain object-center"
                   />
                 </div>
                 <h3 className="mt-6 text-sm text-gray-500">

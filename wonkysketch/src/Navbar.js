@@ -4,7 +4,7 @@ const navigation = [
   { name: "★", href: "/", current: true },
   { name: "About", href: "/about", current: false },
   { name: "Projects", href: "/projects", current: false }, // Fixe current
-  { name: "Shop", href: "#", current: false },
+  /* { name: "Shop", href: "#", current: false }, */
 ];
 
 function classNames(...classes) {

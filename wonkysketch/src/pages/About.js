@@ -23,11 +23,11 @@ function About() {
         </h1>
         <p className="mt-6 text-lg leading-8 text-gray-600">
           Welcome to my portfolio website! I am a computer science student from
-          Norway getting my MSc in Data technology at NTNU.
+          Norway getting my MSc in computer technology at NTNU.
         </p>
         <div className="mt-10 flex items-center justify-center gap-x-6">
           <a
-            href="#"
+            href="mailto:solveig.ua@gmail.com"
             className="text-gray-800 hover:bg-gray-700 hover:text-white rounded-md ma-0 px-3 py-2 text-md font-bold"
           >
             Contact
