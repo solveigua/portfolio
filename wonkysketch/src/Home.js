@@ -40,25 +40,34 @@ function Home() {
           </p>
         </div>
         <div>
-          <p className="font-mono mx-12 text-right text-lg"> Internships </p>
-          <p className="font-mono mx-12 my-4 text-right">
+          <p className="font-mono mx-12 mt-12 text-left text-lg">
+            {" "}
+            Internships <br /> ---
+          </p>
+          <p className="font-mono mx-12 my-4 text-left">
             {" "}
             Software Developer (Consultant) Internship <br />
             NoA Ignite <br />
             2023
           </p>
-          <p className="font-mono mx-12 my-4 text-right">
+          <p className="font-mono mx-12 my-4 text-left">
             Software Engineer Internship <br />
             Hyre <br />
             2022
           </p>
-          <p className="font-mono mx-12 my-4 text-right">
+          <p className="font-mono mx-12 my-4 text-left">
             Digitalization Engineer Internship <br /> OKEA <br /> 2021
           </p>
         </div>
       </div>
 
-      <Gallery className="Gallery" />
+      <Gallery className="Art Projects" />
+      <footer className="relative w-full h-32 bg-[#adb0bf]">
+        <p className="tracking-wide text-gray-800 italic pt-14">
+          PSST! Follow me on instagram:{" "}
+          <a href="http://instagram.com/wonkysketch">@wonkysketch</a>
+        </p>
+      </footer>
     </div>
   );
 }
