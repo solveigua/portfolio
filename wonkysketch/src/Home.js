@@ -7,6 +7,7 @@ import "./Home.css";
 import Title from "./style";
 
 import Gallery from "./Gallery";
+import Art from "./pages/Art";
 
 function Home() {
   const { scrollYProgress } = useScroll();

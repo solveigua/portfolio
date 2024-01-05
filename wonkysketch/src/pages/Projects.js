@@ -43,8 +43,7 @@ const devwork = [
   },
 ];
 function Projects() {
-  const [current, setCurrent] = useState("art");
-  document.body.style.overflow = "hidden";
+  document.body.style.overflow = "auto";
   return (
     <>
       <div className="pl-2 flex flex-row">
@@ -55,58 +54,27 @@ function Projects() {
         <div className="h-12 m-4 ">
           <div className="flex flex-col">
             <div className="mt-6 space-y-6">
-              <div className="flex  flex-col gap-x-3">
-                <button
-                  className="bg-pink-400 hover:bg-blue-400 text-white font-bold my-2 py-2 px-4 border-b-4 border-pink-700 hover:border-blue-500 rounded"
-                  onClick={() => setCurrent("dev")}
-                >
-                  Development projects
-                </button>
-                <button
-                  className="bg-pink-400 hover:bg-blue-400 text-white font-bold my-2 py-2 px-4 border-b-4 border-pink-700 hover:border-blue-500 rounded"
-                  onClick={() => setCurrent("art")}
-                >
-                  Art projects
-                </button>
-              </div>
+              <div className="flex  flex-col gap-x-3"></div>
             </div>
           </div>
         </div>
-        {current === "art" ? (
-          <div className="col-span-2 flex flex-row-reverse">
-            <div className="p-2 m-4 overflow-auto w-auto md:h-[14%] sm:h-1/3">
-              <div className="flex flex-col p-12">
-                <div>
-                  {artwork.map((art) => (
-                    <img
-                      key={art.key}
-                      src={art.imageSrc}
-                      alt={art.imageAlt}
-                      className="object-cover object-center p-2"
-                    />
-                  ))}
-                </div>
-              </div>
+
+        <div className="col-span-2">
+          {devwork.map((dev) => (
+            <div className="p-2">
+              <img
+                key={dev.key}
+                src={dev.imageSrc}
+                alt={dev.imageAlt}
+                className="object-cover object-center h-full w-full"
+              />
+              <a href={dev.href} className="font-bold text-lg text-gray-800">
+                {dev.title}
+              </a>
+              <p className="mt-2 text-sm text-gray-500"> {dev.subtitle}</p>
             </div>
-          </div>
-        ) : (
-          <div className="col-span-2">
-            {devwork.map((dev) => (
-              <div className="p-2 m-4 overflow-auto ">
-                <img
-                  key={dev.key}
-                  src={dev.imageSrc}
-                  alt={dev.imageAlt}
-                  className="object-cover object-center p-2 h-full w-full"
-                />
-                <a href={dev.href} className="font-bold text-lg text-gray-800">
-                  {dev.title}
-                </a>
-                <p className="mt-2 text-sm text-gray-500"> {dev.subtitle}</p>
-              </div>
-            ))}
-          </div>
-        )}
+          ))}
+        </div>
       </div>
     </>
   );
