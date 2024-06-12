@@ -29,13 +29,25 @@ function Home() {
           <p className="font-mono mx-12 text-right">
             MSc in Computer Technology @ NTNU
             <br />
+            2024
+            <br />
+            ---
+          </p>
+        </div>
+        <div className="flex flex-col my-8">
+          <AcademicCapIcon className="h-12 w-12 text-gray-800 place-self-end mx-36" />
+          <p className="font-mono mx-12 text-right">
+            Strykejernet Kunstskole
+            <br />
+            2025
+            <br />
             ---
           </p>
         </div>
         <div className="flex flex-col my-8">
           <BuildingOfficeIcon className="h-12 w-12 text-gray-800 place-self-end mx-36" />
           <p className="font-mono mx-12 text-right">
-            Analyst Level Consultant @ Netlight Oslo
+            ? :)
             <br />
             ---
           </p>

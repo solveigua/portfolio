@@ -22,8 +22,9 @@ function About() {
           Solveig Aune
         </h1>
         <p className="mt-6 text-lg leading-8 text-gray-600">
-          Welcome to my portfolio website! I am a computer science student from
-          Norway getting my MSc in computer technology at NTNU.
+          Welcome to my portfolio website! I am a fullstack developer currently
+          taking a "gap year" in art school. <br /> I have an MSc in Computer
+          Science from NTNU and I like to draw.
         </p>
         <div className="mt-10 flex items-center justify-center gap-x-6">
           <a
