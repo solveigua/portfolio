@@ -1,10 +1,10 @@
 import { Disclosure } from "@headlessui/react";
 
 const navigation = [
-  { name: "★", href: "/", current: true },
-  { name: "About", href: "/about", current: false },
-  { name: "Projects", href: "/projects", current: false }, // Fixe current
-  /* { name: "Shop", href: "#", current: false }, */
+  { name: "★", href: "/", highlight: true },
+  { name: "About", href: "/about", highlight: false },
+  { name: "Projects", href: "/projects", highlight: false },
+  /* { name: "Shop", href: "#", highlight: false }, */
 ];
 
 function classNames(...classes) {
@@ -26,12 +26,12 @@ export default function Navbar() {
                       key={item.name}
                       href={item.href}
                       className={classNames(
-                        item.current
+                        item.highlight
                           ? "bg-gray-400 text-white"
                           : "text-gray-300 hover:bg-gray-700 hover:text-white",
                         "rounded-md ma-0 px-3 py-2 text-md font-bold"
                       )}
-                      aria-current={item.current ? "page" : undefined}
+                      aria-current={item.highlight ? "page" : undefined}
                     >
                       {item.name}
                     </a>
