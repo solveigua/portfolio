@@ -47,7 +47,9 @@ function Home() {
         <div className="flex flex-col my-8">
           <BuildingOfficeIcon className="h-12 w-12 text-gray-800 place-self-end mx-36" />
           <p className="font-mono mx-12 text-right">
-            ? :)
+            Backend Developer @ Tise AS
+            <br />
+            2025 -
             <br />
             ---
           </p>
@@ -75,12 +77,14 @@ function Home() {
       </div>
 
       <Gallery className="Art Projects" />
-      <footer className="relative w-full h-32 bg-[#adb0bf]">
-        <p className="tracking-wide text-gray-800 italic pt-14">
-          PSST! Follow me on instagram:{" "}
-          <a href="http://instagram.com/wonkysketch">@wonkysketch</a>
-        </p>
-      </footer>
+      <div className="justify-center align-center justify-items-center">
+        <footer className="relative w-full h-32 bg-[#adb0bf] ">
+          <p className="tracking-wide text-gray-800 italic pt-14 ">
+            PSST! Follow me on instagram:{" "}
+            <a href="http://instagram.com/wonkysketch">@wonkysketch</a>
+          </p>
+        </footer>
+      </div>
     </div>
   );
 }

@@ -18,12 +18,6 @@ const callouts = [
     imageAlt: "frog",
     href: "#",
   },
-  /*  {
-    name: "Other",
-    imageSrc: scan5,
-    imageAlt: "Scanart",
-    href: "#",
-  }, */
 ];
 
 export default function Gallery() {
